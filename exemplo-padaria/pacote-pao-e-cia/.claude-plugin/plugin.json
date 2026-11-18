@@ -1,0 +1,9 @@
+{
+  "name": "pao-e-cia",
+  "version": "1.1.0",
+  "description": "Skills da padaria fictícia Pão & Cia: atendimento no WhatsApp, encomendas, produção diária e gestão da equipe.",
+  "author": {
+    "name": "dudabarbozat"
+  },
+  "license": "MIT"
+}

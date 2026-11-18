@@ -1,0 +1,9 @@
+{
+  "name": "skills-sua-empresa",
+  "version": "1.0.0",
+  "description": "Skills da SUA-EMPRESA, uma por papel do time.",
+  "author": {
+    "name": "SEU-USUARIO"
+  },
+  "license": "MIT"
+}

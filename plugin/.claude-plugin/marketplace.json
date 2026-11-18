@@ -1,0 +1,17 @@
+{
+  "name": "skills-sua-empresa",
+  "owner": {
+    "name": "SEU-USUARIO"
+  },
+  "metadata": {
+    "description": "Marketplace privado com as skills da SUA-EMPRESA."
+  },
+  "plugins": [
+    {
+      "name": "skills-sua-empresa",
+      "source": "./",
+      "description": "Skills da SUA-EMPRESA, uma por papel do time.",
+      "version": "1.0.0"
+    }
+  ]
+}

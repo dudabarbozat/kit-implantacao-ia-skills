@@ -1,0 +1,9 @@
+{
+  "name": "kit-implantacao",
+  "version": "1.0.0",
+  "description": "Skills do método de implantação: diagnóstico, proposta, onboarding, relatório comparativo e briefing criativo.",
+  "author": {
+    "name": "dudabarbozat"
+  },
+  "license": "MIT"
+}

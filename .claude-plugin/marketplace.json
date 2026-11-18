@@ -1,0 +1,23 @@
+{
+  "name": "kit-implantacao-ia-skills",
+  "owner": {
+    "name": "SEU-USUARIO"
+  },
+  "metadata": {
+    "description": "Método de implantação de IA com skills de Claude Code e um caso fictício completo."
+  },
+  "plugins": [
+    {
+      "name": "kit-implantacao",
+      "source": "./",
+      "description": "Skills do método: diagnóstico, proposta, onboarding, relatório comparativo e briefing criativo.",
+      "version": "1.0.0"
+    },
+    {
+      "name": "pao-e-cia",
+      "source": "./exemplo-padaria/pacote-pao-e-cia",
+      "description": "Pacote de exemplo da padaria fictícia Pão & Cia, uma skill por papel.",
+      "version": "1.1.0"
+    }
+  ]
+}

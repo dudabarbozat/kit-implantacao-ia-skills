@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Relatório de Evolução — Pão &amp; Cia</title>
+<style>
+  :root {
+    --fundo: #0d0f14; --cartao: #12151c; --texto: #dce0ea; --suave: #8a93a8;
+    --destaque: #3dffa0; --laranja: #ff7c3a; --azul: #38bfff; --borda: rgba(255,255,255,0.07);
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--fundo); color: var(--texto);
+         font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 880px; margin: 0 auto; padding: 40px 16px 64px; }
+  header { border-bottom: 1px solid var(--borda); padding-bottom: 24px; margin-bottom: 32px; }
+  .rotulo { color: var(--destaque); font-size: 13px; letter-spacing: .08em; text-transform: uppercase; }
+  h1 { font-size: 32px; line-height: 1.2; margin: 8px 0; }
+  h2 { font-size: 20px; margin: 40px 0 12px; }
+  .meta, .nota { color: var(--suave); font-size: 14px; }
+  .aviso { background: var(--cartao); border: 1px dashed var(--laranja); border-radius: 8px;
+           padding: 10px 14px; font-size: 14px; color: var(--laranja); margin-top: 16px; }
+  .numeros { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .cartao { background: var(--cartao); border: 1px solid var(--borda); border-radius: 12px; padding: 20px; }
+  .cartao strong { display: block; font-size: 30px; color: var(--destaque); }
+  .cartao span { color: var(--suave); font-size: 14px; }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--borda); vertical-align: top; }
+  th { color: var(--suave); font-weight: 500; }
+  td.origem { color: var(--suave); font-size: 13px; }
+  .tabela { overflow-x: auto; }
+  ul.check { list-style: none; padding: 0; }
+  ul.check li { padding: 6px 0 6px 28px; position: relative; }
+  ul.check li::before { content: ""; position: absolute; left: 0; top: 11px; width: 14px; height: 14px;
+                        border: 2px solid var(--suave); border-radius: 3px; }
+  ul.check li.feito::before { background: var(--destaque); border-color: var(--destaque); }
+  .alerta { border-left: 3px solid var(--laranja); padding-left: 12px; }
+  @media (max-width: 640px) { .numeros { grid-template-columns: 1fr; } h1 { font-size: 26px; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="rotulo">Relatório de evolução</div>
+    <h1>Pão &amp; Cia</h1>
+    <div class="meta">Período: março de 2026 (linha de base) → 20 de abril a 5 de maio de 2026 · Emitido em 6 de maio de 2026 · Gerado com a skill relatorio-comparativo</div>
+    <div class="aviso">Caso fictício. Empresa e números inventados para demonstrar o formato do relatório.</div>
+  </header>
+
+  <section class="numeros">
+    <div class="cartao"><strong>96</strong><span>encomendas registradas em ficha (antes: nenhuma)</span></div>
+    <div class="cartao"><strong>91 de 96</strong><span>encomendas confirmadas por escrito ao cliente</span></div>
+    <div class="cartao"><strong>12</strong><span>receitas documentadas em ficha técnica</span></div>
+  </section>
+
+  <h2>Antes</h2>
+  <p>Encomendas anotadas em bloco de papel, sem confirmação para o cliente. WhatsApp no celular de uma atendente que também cuidava do balcão. Plano de produção passado de boca pelo padeiro-chefe. Nenhum ritual de gestão. Os números de março são estimativas da própria equipe, registradas no diagnóstico — não havia controle.</p>
+
+  <h2>Agora</h2>
+  <div class="tabela">
+    <table>
+      <tr><th>Item</th><th>Antes</th><th>Agora</th><th>Origem do dado</th></tr>
+      <tr><td>Encomendas com problema (data, sabor, esquecida)</td><td>cerca de 15%</td><td>3 de 96 (3%)</td><td class="origem">Antes: estimativa do gerente. Agora: registro.csv da skill encomendas. Medições diferentes.</td></tr>
+      <tr><td>Confirmação escrita ao cliente</td><td>nenhuma</td><td>91 de 96</td><td class="origem">registro.csv</td></tr>
+      <tr><td>Resposta no WhatsApp fora do pico</td><td>3 a 4 h</td><td>cerca de 1 h</td><td class="origem">Estimativa da atendente nos dois períodos</td></tr>
+      <tr><td>Tempo diário com anotações de produção</td><td>cerca de 40 min</td><td>cerca de 15 min</td><td class="origem">Estimativa do padeiro-chefe nos dois períodos</td></tr>
+      <tr><td>Receitas documentadas</td><td>0</td><td>12</td><td class="origem">Contagem de fichas em producao/receitas</td></tr>
+      <tr><td>Dailies realizados</td><td>0</td><td>7 de 8 dias desde 27/4</td><td class="origem">Contagem de arquivos em gestao/</td></tr>
+    </table>
+  </div>
+
+  <h2>Recomendações aplicadas</h2>
+  <ul class="check">
+    <li class="feito">Ficha padronizada de encomenda com confirmação ao cliente (semana 3)</li>
+    <li class="feito">Campo "quem retira" na ficha, pedido pelas atendentes (semana 3)</li>
+    <li class="feito">Lista de encomendas do dia entregue ao padeiro-chefe e ao entregador (semana 3)</li>
+    <li class="feito">Daily de 10 minutos na troca de turno (semana 4)</li>
+    <li>Registro diário de sobras — feito em 7 de 14 dias</li>
+    <li>Lista de compras a partir das fichas técnicas — ainda não usada</li>
+  </ul>
+
+  <h2>Resultados do período</h2>
+  <p>A encomenda saiu do papel. Toda encomenda do período tem ficha e quase todas foram confirmadas por escrito antes de ir para a produção. Das 3 com problema, 2 foram registradas sem a confirmação do cliente — exatamente o passo que a ficha existe para garantir.</p>
+  <p>A atendente conta que parou de digitar do zero as respostas de horário, entrega e preço, e que o balcão deixou de esperar enquanto ela procurava informação no caderno. O padeiro-chefe diz que um auxiliar já consegue tocar a primeira fornada seguindo o plano impresso.</p>
+
+  <h2>O que ainda pode melhorar</h2>
+  <p class="alerta">O registro de sobras foi feito em metade dos dias, então a skill producao-diaria ainda não tem histórico para sugerir quantidades. O WhatsApp continua concentrado em uma pessoa no horário de almoço. Plano: registro de sobras vira item fixo do daily de fechamento e uma segunda atendente passa a usar a skill no horário do almoço.</p>
+
+  <h2>Próximos passos</h2>
+  <ul>
+    <li>Pacote v1.2: modo compras com as 12 fichas técnicas já registradas</li>
+    <li>Treinamento de 30 minutos para a segunda atendente</li>
+    <li>Proposta da fase 2 (programa de fidelidade), usando o cadastro que já existe nas fichas de encomenda</li>
+    <li>Próximo relatório: 5 de junho de 2026</li>
+  </ul>
+
+  <p class="nota">Números de "antes" são estimativas da equipe registradas no diagnóstico de 30 de março. Números de "agora" vêm dos arquivos gerados pelas skills, exceto onde indicado como estimativa.</p>
+</main>
+</body>
+</html>

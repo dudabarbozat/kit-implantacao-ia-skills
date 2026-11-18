@@ -1,0 +1,30 @@
+# [SUA-EMPRESA] — contexto da empresa
+
+> Renomeie para CLAUDE.md. Este arquivo é a fonte única dos dados da empresa: as skills leem daqui e não repetem estes dados.
+
+## Quem somos
+[Duas ou três frases.]
+
+## Funcionamento
+- Horários
+- Canais de atendimento
+- Formas de pagamento
+
+## Produtos ou serviços de referência
+| Item | Preço | Observação |
+|---|---|---|
+
+Item fora desta tabela: não informe, confirme com [papel responsável].
+
+## Regras do negócio
+- [prazos, sinais, limites, o que precisa de aprovação]
+
+## Papéis e skills
+| Papel | Skill |
+|---|---|
+
+## Tom de voz
+[Três atributos e como aplicar. O que nunca dizer.]
+
+## Pasta de trabalho
+O time abre o Claude Code dentro de `~/[nome-do-pacote]/`. As skills salvam arquivos ali.
